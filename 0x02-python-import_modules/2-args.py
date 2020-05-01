@@ -15,5 +15,5 @@ if __name__ == "__main__":
     count = 0
     for argument in argv:
         if count > 0:
-             print("{:d}: {}".format(count, argument))
+            print("{:d}: {}".format(count, argument))
         count += 1
