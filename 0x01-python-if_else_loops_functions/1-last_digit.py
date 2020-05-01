@@ -3,7 +3,7 @@ import random
 number = random.randint(-10000, 10000)
 last_of = "Last digit of"
 if number < 0:
-    count = (number % -10) * -1
+    count = number % -10
 else:
     count = number % 10
 if count == 0:
