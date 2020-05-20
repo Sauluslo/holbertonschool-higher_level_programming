@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"4-square.py define"
+"6-square.py define"
 
 
 class Square:
@@ -10,8 +10,8 @@ class Square:
         Arg self identificador
         size tamañe of square
         """
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     @property
     def position(self):
