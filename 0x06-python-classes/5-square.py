@@ -34,7 +34,7 @@ class Square:
             print()
         else:
             for iterator in range(0, self.__size):
-                    print("#" * self.__size)
+                print("#" * self.__size)
 
     def area(self):
         Area = self.__size * self.__size
