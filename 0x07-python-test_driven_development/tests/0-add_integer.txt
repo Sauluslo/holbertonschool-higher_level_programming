@@ -1,0 +1,25 @@
+``add_integer`` from the ``add_integer`` module:
+>>> add_integer = __import__('0-add_integer').add_integer
+
+>>> add_integer(1, 47)
+48
+
+>>> add_integer('a', 10)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+>>> add_integer(10, 'b')
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+
+>>> add_integer("", 98)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+>>> add_integer("", "")
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
