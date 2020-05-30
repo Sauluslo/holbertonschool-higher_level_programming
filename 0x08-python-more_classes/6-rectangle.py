@@ -6,10 +6,12 @@
 class Rectangle:
     """ class Rectangle that defines a rectangle by: (based on 0-rectangle.py)
     """
+    number_of_instances = 0
 
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
+        Rectangle.number_of_instances += 1
 
     def __str__(self):
         if self.__width == 0 or self.__height == 0:
