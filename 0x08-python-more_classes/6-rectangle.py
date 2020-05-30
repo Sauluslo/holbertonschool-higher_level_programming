@@ -23,6 +23,16 @@ class Rectangle:
     def __repr__(self):
         return ("Rectangle({}, {})".format(self.width, self.height))
 
+    def area(self):
+        Area = self.__width * self.__height
+        return Area
+
+    def perimeter(self):
+        if self.width == 0 or self.height == 0:
+            return 0
+        else:
+            return (2 * (self.height + self.width))
+
     @property
     def height(self):
         return self.__height
@@ -54,16 +64,6 @@ class Rectangle:
             raise ValueError("width must be >= 0")
         else:
             self.__width = value
-
-    def area(self):
-        Area = self.__width * self.__height
-        return Area
-
-    def perimeter(self):
-        if self.width == 0 or self.height == 0:
-            return 0
-        else:
-            return (2 * (self.height + self.width))
 
     def __del__(self):
         Rectangle.number_of_instances -= 1
