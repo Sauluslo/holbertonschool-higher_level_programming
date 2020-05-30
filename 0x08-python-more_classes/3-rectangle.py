@@ -16,7 +16,7 @@ class Rectangle:
             return ""
         else:
             for height in range(self.__height):
-                for width in range(self.__width):
+                for width in range(self.__height - 1):
                     print("#" * self.__width)
                 return "#" * self.__width
 
