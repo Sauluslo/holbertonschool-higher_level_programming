@@ -1,0 +1,27 @@
+7-BaseGeometry Test
+
+>>> BaseGeometry = _import_('7-base_geometry').BaseGeometry
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("six", 0)
+Traceback (most recent call last):
+...
+ValueError: six must be greater than 0
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator()
+Traceback (most recent call last):
+...
+TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("name", "Alde")
+Traceback (most recent call last):
+...
+TypeError: name must be an integer
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("distance", -6)
+Traceback (most recent call last):
+...
+ValueError: distance must be greater than 0
