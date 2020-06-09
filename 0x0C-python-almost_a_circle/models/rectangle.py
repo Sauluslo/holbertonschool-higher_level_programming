@@ -7,12 +7,11 @@ from models.base import Base
 class Rectangle(Base):
     """ Class Rectangle that inherits from Base
     """
-    __nb_objects = 0
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        """ Init of the id
-            in the class Rectangle
+        """ Init of the id in the class Rectangle
         """
+
         super().__init__(id)
         self.width = width
         self.height = height
