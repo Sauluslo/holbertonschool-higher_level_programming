@@ -95,3 +95,13 @@ class Rectangle(Base):
         """
         area = self.__width * self.__height
         return area
+
+    def display(self):
+        """ That prints in stdout the Rectangle
+            instance with the character # - you
+            don’t need to handle x and y here.
+        """
+        print("\n" * self.y, end="")
+        for height in range(self.height):
+            print(" " * self.x, end="")
+            print("#" * self.width)
