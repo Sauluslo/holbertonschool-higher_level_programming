@@ -13,4 +13,8 @@
 -- (6) You can use only one SELECT statement
 -- (7) The database name will be passed
 -- as an argument of the mysql command
-
+SELECT name AS 'genre', COUNT(*) AS 'number_shows'
+FROM tv_genres, tv_show_genres
+WHERE tv_genres.id = tv_show_genres.genre_id
+GROUP BY tv_genres.name
+ORDER BY number_shows DESC;
