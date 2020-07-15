@@ -4,4 +4,4 @@
 -- (2) Results must be sorted in ascending order by cities.id
 -- (3) You are not allowed to use the JOIN keyword
 -- (4) The database name will be passed as an argument of the mysql command
-
+SELECT id, name FROM cities WHERE state_id = 1 ORDER BY id;
