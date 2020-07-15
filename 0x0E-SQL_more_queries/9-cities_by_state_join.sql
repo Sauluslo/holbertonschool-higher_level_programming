@@ -4,4 +4,6 @@
 -- (2) Results must be sorted in ascending order by cities.id
 -- (3) You can use only one SELECT statement
 -- (4) The database name will be passed as an argument of the mysql command
-
+SELECT cities.id, cities.name, states.name
+FROM states, cities WHERE cities.state_id = states.id
+ORDER BY cities.id ASC;
