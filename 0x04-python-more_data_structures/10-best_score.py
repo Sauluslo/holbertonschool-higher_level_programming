@@ -11,6 +11,7 @@ def best_score(a_dictionary):
         (4) You are not allowed to import any module.
     """
     if a_dictionary is not None:
-        return max(a_dictionary, key=a_dictionary.get)
+        best_score = max(a_dictionary, key=a_dictionary.get)
+        return best_score
     else:
         return
